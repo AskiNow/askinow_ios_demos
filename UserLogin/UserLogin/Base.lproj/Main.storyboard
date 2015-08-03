@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syq-FN-KPE">
+                                <rect key="frame" x="16" y="171" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ac3-Cn-WdP">
+                                <rect key="frame" x="16" y="260" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKj-zc-uK0">
+                                <rect key="frame" x="16" y="142" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfJ-j8-C5b">
+                                <rect key="frame" x="16" y="231" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l00-4u-PGo">
+                                <rect key="frame" x="276" y="326" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbc-Yj-Wc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="syq-FN-KPE" firstAttribute="top" secondItem="LKj-zc-uK0" secondAttribute="bottom" constant="8" symbolic="YES" id="01O-Wc-7d4"/>
+                            <constraint firstItem="Ac3-Cn-WdP" firstAttribute="leading" secondItem="HfJ-j8-C5b" secondAttribute="leading" id="03F-L0-a4W"/>
+                            <constraint firstItem="syq-FN-KPE" firstAttribute="leading" secondItem="HfJ-j8-C5b" secondAttribute="leading" id="0lg-34-VAx"/>
+                            <constraint firstItem="HfJ-j8-C5b" firstAttribute="top" secondItem="syq-FN-KPE" secondAttribute="bottom" constant="30" id="8dv-mO-5no"/>
+                            <constraint firstItem="LKj-zc-uK0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="BfL-D3-uRZ"/>
+                            <constraint firstItem="Ac3-Cn-WdP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hbo-qr-TEj"/>
+                            <constraint firstItem="l00-4u-PGo" firstAttribute="top" secondItem="Ac3-Cn-WdP" secondAttribute="bottom" constant="36" id="Hyd-W8-DY5"/>
+                            <constraint firstAttribute="centerX" secondItem="l00-4u-PGo" secondAttribute="centerX" id="Ytu-92-56a"/>
+                            <constraint firstAttribute="centerX" secondItem="l00-4u-PGo" secondAttribute="centerX" id="ZWx-zD-8TI"/>
+                            <constraint firstAttribute="centerY" secondItem="l00-4u-PGo" secondAttribute="centerY" id="ZbX-nM-k3v"/>
+                            <constraint firstItem="Ac3-Cn-WdP" firstAttribute="top" secondItem="HfJ-j8-C5b" secondAttribute="bottom" constant="8" symbolic="YES" id="aYp-PU-kwF"/>
+                            <constraint firstItem="syq-FN-KPE" firstAttribute="trailing" secondItem="Ac3-Cn-WdP" secondAttribute="trailing" id="bhm-ka-2sb"/>
+                            <constraint firstItem="syq-FN-KPE" firstAttribute="leading" secondItem="LKj-zc-uK0" secondAttribute="leading" id="dZH-Jo-pcO"/>
+                            <constraint firstItem="Ac3-Cn-WdP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tfD-W1-7dE"/>
+                            <constraint firstItem="l00-4u-PGo" firstAttribute="top" secondItem="Ac3-Cn-WdP" secondAttribute="bottom" constant="38" id="zBr-VC-Q6a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ytu-92-56a"/>
+                                <exclude reference="ZbX-nM-k3v"/>
+                                <exclude reference="zBr-VC-Q6a"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="syq-FN-KPE" id="PvO-tx-WM3"/>
+                        <outlet property="passwordTextField" destination="Ac3-Cn-WdP" id="Tqf-W2-gHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
